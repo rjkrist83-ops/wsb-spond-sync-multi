@@ -1,7 +1,6 @@
 import asyncio
 import json
 import os
-import sys
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
@@ -51,9 +50,8 @@ def normalize_location(value):
         if address:
             parts.append(address)
 
-        if locality:
-            if locality.lower() not in address.lower():
-                parts.append(locality)
+        if locality and locality.lower() not in address.lower():
+            parts.append(locality)
 
         deduped = []
         seen = set()
@@ -97,7 +95,7 @@ def parse_event_date(value):
         if value.endswith("Z"):
             return datetime.fromisoformat(value.replace("Z", "+00:00"))
         return datetime.fromisoformat(value)
-    except:
+    except Exception:
         return None
 
 
@@ -120,7 +118,6 @@ def normalize_event(evt, home_keywords):
     local_dt = to_local_datetime(dt)
 
     location = normalize_location(evt.get("location"))
-
     event_type = "home" if any(k in location.lower() for k in home_keywords) else "away"
 
     return {
@@ -132,23 +129,72 @@ def normalize_event(evt, home_keywords):
     }
 
 
+def member_name(member):
+    if not isinstance(member, dict):
+        return ""
+
+    for key in ["name", "displayName", "display_name", "fullName", "full_name"]:
+        value = member.get(key)
+        if isinstance(value, str) and value.strip():
+            return value.strip()
+
+    first = (
+        member.get("firstName")
+        or member.get("first_name")
+        or member.get("firstname")
+        or ""
+    )
+    last = (
+        member.get("lastName")
+        or member.get("last_name")
+        or member.get("lastname")
+        or ""
+    )
+
+    full = f"{first} {last}".strip()
+    if full:
+        return full
+
+    return ""
+
+
 def build_member_map(group_detail):
     members = group_detail.get("members", [])
-    return {
-        str(m.get("id")): m.get("name")
-        for m in members if isinstance(m, dict)
-    }
+    result = {}
+
+    for m in members:
+        if not isinstance(m, dict):
+            continue
+
+        member_id = m.get("id")
+        if member_id is None:
+            continue
+
+        name = member_name(m)
+        if name:
+            result[str(member_id)] = name
+
+    return result
 
 
 def extract_attendance(detail, member_map):
-    responses = detail.get("responses", {})
-    accepted = responses.get("acceptedIds", [])
+    responses = detail.get("responses", {}) or {}
+    accepted = responses.get("acceptedIds", []) or []
 
     names = []
+    missing_ids = []
+
     for mid in accepted:
         mid = str(mid)
-        if mid in member_map:
-            names.append(member_map[mid])
+        name = member_map.get(mid)
+
+        if name:
+            names.append(name)
+        else:
+            missing_ids.append(mid)
+
+    if missing_ids:
+        print("WARNING: acceptedIds without name match:", ", ".join(missing_ids))
 
     return sorted(set(names))
 
@@ -170,8 +216,12 @@ async def process_team(team):
         group = await client.get_group(group_id)
         member_map = build_member_map(group)
 
-        events = await client.get_events(group_id)
+        print("DEBUG: members in group:", len(group.get("members", [])))
+        print("DEBUG: member_map entries:", len(member_map))
+        if group.get("members"):
+            print("DEBUG: first member sample:", json.dumps(group.get("members")[0], ensure_ascii=False, default=str))
 
+        events = await client.get_events(group_id)
         output = []
 
         for evt in events:
@@ -188,8 +238,9 @@ async def process_team(team):
                 continue
 
             detail = await client.get_event(norm["id"])
-            attendees = extract_attendance(detail, member_map)
+            print("DEBUG: event responses:", json.dumps(detail.get("responses", {}), ensure_ascii=False, default=str))
 
+            attendees = extract_attendance(detail, member_map)
             norm["attending"] = attendees
             output.append(norm)
 
@@ -198,11 +249,16 @@ async def process_team(team):
         os.makedirs("feeds", exist_ok=True)
 
         with open(team["output_file"], "w", encoding="utf-8") as f:
-            json.dump({
-                "team": team["slug"],
-                "generated": datetime.now(timezone.utc).isoformat(),
-                "events": output
-            }, f, indent=2, ensure_ascii=False)
+            json.dump(
+                {
+                    "team": team["slug"],
+                    "generated": datetime.now(timezone.utc).isoformat(),
+                    "events": output,
+                },
+                f,
+                indent=2,
+                ensure_ascii=False,
+            )
 
         print(f"OK: {team['output_file']} ({len(output)} events)")
 
