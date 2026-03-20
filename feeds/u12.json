@@ -1,6 +1,6 @@
 {
   "team": "u12",
-  "generated": "2026-03-20T14:10:54.995044+00:00",
+  "generated": "2026-03-20T16:06:50.536360+00:00",
   "events": [
     {
       "id": "79C44CA780024D388433BAEC9CDDCB1B",
@@ -9,7 +9,14 @@
       "location": "Giants hengelo",
       "type": "away",
       "attending": [
-        null
+        "Aiden Vos",
+        "Jordan Si",
+        "Lux Pullen",
+        "Niels Krist",
+        "Owen Hemmes",
+        "Reno Martin",
+        "Suus Hendriks",
+        "Vince Van luijk"
       ]
     },
     {
@@ -19,7 +26,9 @@
       "location": "Honk- en Softbalvereniging Uitsmijters '55, Maardijk 83C, Almelo",
       "type": "away",
       "attending": [
-        null
+        "Niels Krist",
+        "Reno Martin",
+        "Vince Van luijk"
       ]
     },
     {
@@ -29,7 +38,9 @@
       "location": "Tex Town Tigers, Kotkampweg 119, Enschede",
       "type": "away",
       "attending": [
-        null
+        "Jordan Si",
+        "Niels Krist",
+        "Vince Van luijk"
       ]
     },
     {
@@ -39,7 +50,8 @@
       "location": "Honk- en Softbal Vereniging Giants Hengelo, Torenlaan 64, Hengelo",
       "type": "away",
       "attending": [
-        null
+        "Niels Krist",
+        "Vince Van luijk"
       ]
     },
     {
@@ -49,7 +61,9 @@
       "location": "Bataafseweg 2A, Bataafseweg 2A, Winterswijk",
       "type": "away",
       "attending": [
-        null
+        "Jordan Si",
+        "Niels Krist",
+        "Vince Van luijk"
       ]
     },
     {
@@ -59,7 +73,9 @@
       "location": "Honk- en Softbalvereniging Uitsmijters '55, Maardijk 83C, Almelo",
       "type": "away",
       "attending": [
-        null
+        "Jordan Si",
+        "Niels Krist",
+        "Vince Van luijk"
       ]
     },
     {
@@ -69,7 +85,9 @@
       "location": "The Eagles, Colmschaterstraatweg 3, Schalkhaar",
       "type": "away",
       "attending": [
-        null
+        "Jordan Si",
+        "Niels Krist",
+        "Vince Van luijk"
       ]
     },
     {
@@ -79,7 +97,8 @@
       "location": "Base- & Softball Club Arnhem Rhinos ⚾, Beukenlaan 21, Arnhem",
       "type": "away",
       "attending": [
-        null
+        "Niels Krist",
+        "Vince Van luijk"
       ]
     }
   ]
