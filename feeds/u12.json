@@ -1,1 +1,86 @@
-
+{
+  "team": "u12",
+  "generated": "2026-03-20T14:10:54.995044+00:00",
+  "events": [
+    {
+      "id": "79C44CA780024D388433BAEC9CDDCB1B",
+      "title": "Oefentoernooi Pupillen Giants",
+      "start": "2026-03-29T10:00:00",
+      "location": "Giants hengelo",
+      "type": "away",
+      "attending": [
+        null
+      ]
+    },
+    {
+      "id": "7EB5B99CB38B4E418E616E9FA032A148",
+      "title": "Competitiewedstrijd Uitsmijters '55 - MHU12-1 - WSB - MHU12-",
+      "start": "2026-04-11T10:00:00",
+      "location": "Honk- en Softbalvereniging Uitsmijters '55, Maardijk 83C, Almelo",
+      "type": "away",
+      "attending": [
+        null
+      ]
+    },
+    {
+      "id": "BAF24648CE2441398E961E53C7062AF6",
+      "title": "Competitiewedstrijd Tex Town Tigers - MHU12-2 - WSB - MHU12-",
+      "start": "2026-05-02T12:00:00",
+      "location": "Tex Town Tigers, Kotkampweg 119, Enschede",
+      "type": "away",
+      "attending": [
+        null
+      ]
+    },
+    {
+      "id": "C1C278B3355C4FD7958C5086C1DB59DE",
+      "title": "Competitiewedstrijd Giants - MHU12-1 - WSB - MHU12-",
+      "start": "2026-06-20T10:00:00",
+      "location": "Honk- en Softbal Vereniging Giants Hengelo, Torenlaan 64, Hengelo",
+      "type": "away",
+      "attending": [
+        null
+      ]
+    },
+    {
+      "id": "8D5DCA88FFEA473D94227A9664D0AA09",
+      "title": "Competitiewedstrijd Hickory - MHU12-1 - WSB - MHU12-",
+      "start": "2026-07-04T10:00:00",
+      "location": "Bataafseweg 2A, Bataafseweg 2A, Winterswijk",
+      "type": "away",
+      "attending": [
+        null
+      ]
+    },
+    {
+      "id": "B34EF27CB6C846C18C4873645207EAA6",
+      "title": "Competitiewedstrijd Uitsmijters '55 - MHU12-1 - WSB - MHU12-",
+      "start": "2026-09-05T10:00:00",
+      "location": "Honk- en Softbalvereniging Uitsmijters '55, Maardijk 83C, Almelo",
+      "type": "away",
+      "attending": [
+        null
+      ]
+    },
+    {
+      "id": "03FF5CDC1BF24E0CA21AB3045E70FC31",
+      "title": "Competitiewedstrijd Eagles - MHU12-2 - WSB - MHU12-",
+      "start": "2026-09-19T10:00:00",
+      "location": "The Eagles, Colmschaterstraatweg 3, Schalkhaar",
+      "type": "away",
+      "attending": [
+        null
+      ]
+    },
+    {
+      "id": "67C9DC0B86164F6B8192E62F4364B61B",
+      "title": "Competitiewedstrijd Arnhem Rhinos - MHU12-1 - WSB - MHU12-",
+      "start": "2026-09-26T10:00:00",
+      "location": "Base- & Softball Club Arnhem Rhinos ⚾, Beukenlaan 21, Arnhem",
+      "type": "away",
+      "attending": [
+        null
+      ]
+    }
+  ]
+}
