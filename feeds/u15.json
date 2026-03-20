@@ -1,6 +1,6 @@
 {
   "team": "u15",
-  "generated": "2026-03-20T16:06:52.108210+00:00",
+  "generated": "2026-03-20T18:14:32.694971+00:00",
   "events": [
     {
       "id": "103D181B129A4AECA754905D61E90B96",
@@ -9,16 +9,16 @@
       "location": "The Red Caps, Bavoortseweg 7, Leusden",
       "type": "away",
       "attending": [
-        "Bas Krist",
-        "Evan de Wilde",
-        "Giorgio Pattimukaij",
-        "Hero Zonne",
-        "Jason van Zeist",
-        "Liam van Logchem",
-        "Milay Higler",
-        "Oromé Baas",
-        "Timme Kroon",
-        "Yannick Tabak"
+        "Bas",
+        "Evan de",
+        "Giorgio",
+        "Hero",
+        "Jason",
+        "Liam",
+        "Milay",
+        "Oromé",
+        "Timme",
+        "Yannick"
       ]
     },
     {
@@ -28,14 +28,14 @@
       "location": "Honk- en Softbal Vereniging Giants Hengelo, Torenlaan 64, Hengelo",
       "type": "away",
       "attending": [
-        "Bas Krist",
-        "Evan de Wilde",
-        "Hero Zonne",
-        "Jason van Zeist",
-        "Liam van Logchem",
-        "Oromé Baas",
-        "Ryan Wever",
-        "Stijn Van Brummen"
+        "Bas",
+        "Evan de",
+        "Hero",
+        "Jason",
+        "Liam",
+        "Oromé",
+        "Ryan",
+        "Stijn"
       ]
     }
   ]
