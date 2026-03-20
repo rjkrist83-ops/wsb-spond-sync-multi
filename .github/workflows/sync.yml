@@ -31,9 +31,12 @@ jobs:
 
       - name: Run sync
         env:
-          SPOND_EMAIL: ${{ secrets.SPOND_EMAIL }}
-          SPOND_PASSWORD: ${{ secrets.SPOND_PASSWORD }}
+          SPOND_EMAIL_U12: ${{ secrets.SPOND_EMAIL_U12 }}
+          SPOND_PASSWORD_U12: ${{ secrets.SPOND_PASSWORD_U12 }}
           SPOND_GROUP_ID_U12: ${{ secrets.SPOND_GROUP_ID_U12 }}
+
+          SPOND_EMAIL_U15: ${{ secrets.SPOND_EMAIL_U15 }}
+          SPOND_PASSWORD_U15: ${{ secrets.SPOND_PASSWORD_U15 }}
           SPOND_GROUP_ID_U15: ${{ secrets.SPOND_GROUP_ID_U15 }}
         run: |
           python sync_spond.py
