@@ -129,31 +129,27 @@ def normalize_event(evt, home_keywords):
     }
 
 
+# ✅ AANGEPAST: alleen voornamen
 def member_name(member):
     if not isinstance(member, dict):
         return ""
 
+    # Als er een volledige naam is → pak eerste woord
     for key in ["name", "displayName", "display_name", "fullName", "full_name"]:
         value = member.get(key)
         if isinstance(value, str) and value.strip():
-            return value.strip()
+            return value.strip().split(" ")[0]
 
+    # Anders gebruik firstName varianten
     first = (
         member.get("firstName")
         or member.get("first_name")
         or member.get("firstname")
         or ""
     )
-    last = (
-        member.get("lastName")
-        or member.get("last_name")
-        or member.get("lastname")
-        or ""
-    )
 
-    full = f"{first} {last}".strip()
-    if full:
-        return full
+    if first:
+        return first.strip()
 
     return ""
 
@@ -216,10 +212,8 @@ async def process_team(team):
         group = await client.get_group(group_id)
         member_map = build_member_map(group)
 
-        print("DEBUG: members in group:", len(group.get("members", [])))
-        print("DEBUG: member_map entries:", len(member_map))
-        if group.get("members"):
-            print("DEBUG: first member sample:", json.dumps(group.get("members")[0], ensure_ascii=False, default=str))
+        print("DEBUG: members:", len(group.get("members", [])))
+        print("DEBUG: mapped names:", len(member_map))
 
         events = await client.get_events(group_id)
         output = []
@@ -238,10 +232,10 @@ async def process_team(team):
                 continue
 
             detail = await client.get_event(norm["id"])
-            print("DEBUG: event responses:", json.dumps(detail.get("responses", {}), ensure_ascii=False, default=str))
 
             attendees = extract_attendance(detail, member_map)
             norm["attending"] = attendees
+
             output.append(norm)
 
         output.sort(key=lambda x: x["start"])
