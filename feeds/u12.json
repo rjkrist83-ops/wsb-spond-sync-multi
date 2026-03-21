@@ -1,12 +1,12 @@
 {
   "team": "u12",
-  "generated": "2026-03-21T07:10:52.341993+00:00",
+  "generated": "2026-03-21T19:44:57.078474+00:00",
   "events": [
     {
       "id": "79C44CA780024D388433BAEC9CDDCB1B",
       "title": "Oefentoernooi Pupillen Giants",
       "start": "2026-03-29T10:00:00",
-      "location": "Giants hengelo",
+      "location": "Honk- en Softbal Vereniging Giants Hengelo, Torenlaan 64, Hengelo",
       "type": "away",
       "attending": [
         "Aiden",
@@ -28,6 +28,7 @@
       "attending": [
         "Niels",
         "Reno",
+        "Suus",
         "Vince"
       ]
     },
