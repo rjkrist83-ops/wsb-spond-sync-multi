@@ -1,26 +1,7 @@
 {
   "team": "u15",
-  "generated": "2026-03-21T19:44:59.775244+00:00",
+  "generated": "2026-03-22T07:28:31.927688+00:00",
   "events": [
-    {
-      "id": "103D181B129A4AECA754905D61E90B96",
-      "title": "Oefenwedstrijd Aspiranten The Red Caps",
-      "start": "2026-03-21T14:00:00",
-      "location": "The Red Caps, Bavoortseweg 7, Leusden",
-      "type": "away",
-      "attending": [
-        "Bas",
-        "Evan de",
-        "Giorgio",
-        "Hero",
-        "Jason",
-        "Liam",
-        "Milay",
-        "Oromé",
-        "Timme",
-        "Yannick"
-      ]
-    },
     {
       "id": "A942809A7F424570A340B93C463C38B7",
       "title": "Oefentoernooi Aspiranten Giants",
