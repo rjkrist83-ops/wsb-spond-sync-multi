@@ -1,6 +1,6 @@
 {
   "team": "u15",
-  "generated": "2026-03-23T08:09:44.455475+00:00",
+  "generated": "2026-03-24T08:00:44.043866+00:00",
   "events": [
     {
       "id": "A942809A7F424570A340B93C463C38B7",
@@ -11,13 +11,80 @@
       "attending": [
         "Bas",
         "Evan de",
+        "Giorgio",
         "Hero",
         "Jason",
         "Liam",
         "Oromé",
         "Ryan",
         "Stijn",
-        "Timme"
+        "Timme",
+        "Yannick"
+      ]
+    },
+    {
+      "id": "BF0F14CC4D4746F1A7378C5DFFD7E209",
+      "title": "Competitiewedstrijd Giants - MHU15-2 vs WSB MHU15-1",
+      "start": "2026-04-18T14:00:00",
+      "location": "Honk- en Softbal Vereniging Giants Hengelo, Torenlaan 64, Hengelo",
+      "type": "away",
+      "attending": [
+        "Bas",
+        "Liam"
+      ]
+    },
+    {
+      "id": "3EF54F28D10C465BA3E714562CB763D6",
+      "title": "Competitiewedstrijd Cubs - MHU15-1 vs WSB MHU15-1",
+      "start": "2026-06-06T11:00:00",
+      "location": "Honk- en softbalvereniging Cubs Hardenberg, Riverside Park, Parkweg 42b, Hardenberg",
+      "type": "away",
+      "attending": [
+        "Bas",
+        "Liam"
+      ]
+    },
+    {
+      "id": "99CE5A75BDB44889BCD9A24F27471509",
+      "title": "Competitiewedstrijd Tex Town Tigers - MHU15-1 vs WSB MHU15-1",
+      "start": "2026-06-20T12:00:00",
+      "location": "Tex Town Tigers, Kotkampweg 119, Enschede",
+      "type": "away",
+      "attending": [
+        "Bas",
+        "Liam"
+      ]
+    },
+    {
+      "id": "4705D021F8EC4AC0858341C760BBF157",
+      "title": "Competitiewedstrijd Eagles - MHU15 vs WSB MHU15-1",
+      "start": "2026-07-04T13:00:00",
+      "location": "The Eagles, Colmschaterstraatweg 3, Schalkhaar",
+      "type": "away",
+      "attending": [
+        "Bas",
+        "Liam"
+      ]
+    },
+    {
+      "id": "BC9F355193C243BF8502177DBFBA9733",
+      "title": "Competitiewedstrijd Uitsmijters '55 - MHU15-1 vs WSB MHU15-1",
+      "start": "2026-07-11T13:30:00",
+      "location": "Honk- en Softbalvereniging Uitsmijters '55, Maardijk 83C, Almelo",
+      "type": "away",
+      "attending": [
+        "Bas",
+        "Liam"
+      ]
+    },
+    {
+      "id": "BE653B02E3C644A099638253336251D4",
+      "title": "Competitiewedstrijd Giants - MHU15-2 vs WSB MHU15-1",
+      "start": "2026-09-05T14:00:00",
+      "location": "Honk- en Softbal Vereniging Giants Hengelo, Torenlaan 64, Hengelo",
+      "type": "away",
+      "attending": [
+        "Bas"
       ]
     }
   ]
