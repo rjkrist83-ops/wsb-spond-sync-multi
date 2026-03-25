@@ -1,6 +1,6 @@
 {
   "team": "u12",
-  "generated": "2026-03-24T08:00:40.915240+00:00",
+  "generated": "2026-03-25T07:59:47.712459+00:00",
   "events": [
     {
       "id": "79C44CA780024D388433BAEC9CDDCB1B",
@@ -26,6 +26,7 @@
       "location": "Honk- en Softbalvereniging Uitsmijters '55, Maardijk 83C, Almelo",
       "type": "away",
       "attending": [
+        "Aiden",
         "Niels",
         "Reno",
         "Suus",
@@ -39,6 +40,7 @@
       "location": "Tex Town Tigers, Kotkampweg 119, Enschede",
       "type": "away",
       "attending": [
+        "Aiden",
         "Jordan",
         "Niels",
         "Vince"
@@ -51,6 +53,7 @@
       "location": "Honk- en Softbal Vereniging Giants Hengelo, Torenlaan 64, Hengelo",
       "type": "away",
       "attending": [
+        "Aiden",
         "Niels",
         "Vince"
       ]
@@ -62,6 +65,7 @@
       "location": "Bataafseweg 2A, Bataafseweg 2A, Winterswijk",
       "type": "away",
       "attending": [
+        "Aiden",
         "Jordan",
         "Niels",
         "Vince"
