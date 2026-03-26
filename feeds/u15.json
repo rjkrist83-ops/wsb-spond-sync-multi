@@ -1,6 +1,6 @@
 {
   "team": "u15",
-  "generated": "2026-03-25T07:59:50.707399+00:00",
+  "generated": "2026-03-26T08:09:30.218649+00:00",
   "events": [
     {
       "id": "A942809A7F424570A340B93C463C38B7",
@@ -30,7 +30,9 @@
       "type": "away",
       "attending": [
         "Bas",
-        "Liam"
+        "Jason",
+        "Liam",
+        "Timme"
       ]
     },
     {
@@ -41,7 +43,9 @@
       "type": "away",
       "attending": [
         "Bas",
-        "Liam"
+        "Jason",
+        "Liam",
+        "Timme"
       ]
     },
     {
@@ -52,7 +56,9 @@
       "type": "away",
       "attending": [
         "Bas",
-        "Liam"
+        "Jason",
+        "Liam",
+        "Timme"
       ]
     },
     {
@@ -63,7 +69,9 @@
       "type": "away",
       "attending": [
         "Bas",
-        "Liam"
+        "Jason",
+        "Liam",
+        "Timme"
       ]
     },
     {
@@ -74,7 +82,9 @@
       "type": "away",
       "attending": [
         "Bas",
-        "Liam"
+        "Jason",
+        "Liam",
+        "Timme"
       ]
     },
     {
@@ -84,7 +94,9 @@
       "location": "Honk- en Softbal Vereniging Giants Hengelo, Torenlaan 64, Hengelo",
       "type": "away",
       "attending": [
-        "Bas"
+        "Bas",
+        "Jason",
+        "Timme"
       ]
     }
   ]
