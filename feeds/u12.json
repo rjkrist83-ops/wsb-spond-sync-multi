@@ -1,24 +1,7 @@
 {
   "team": "u12",
-  "generated": "2026-03-29T07:56:44.505567+00:00",
+  "generated": "2026-03-30T09:58:44.821041+00:00",
   "events": [
-    {
-      "id": "79C44CA780024D388433BAEC9CDDCB1B",
-      "title": "Oefentoernooi Pupillen Giants",
-      "start": "2026-03-29T10:00:00",
-      "location": "Honk- en Softbal Vereniging Giants Hengelo, Torenlaan 64, Hengelo",
-      "type": "away",
-      "attending": [
-        "Aiden",
-        "Jordan",
-        "Lux",
-        "Niels",
-        "Owen",
-        "Reno",
-        "Suus",
-        "Vince"
-      ]
-    },
     {
       "id": "7EB5B99CB38B4E418E616E9FA032A148",
       "title": "Competitiewedstrijd Uitsmijters '55 - MHU12-1 - WSB - MHU12-",
@@ -102,6 +85,7 @@
       "location": "Base- & Softball Club Arnhem Rhinos ⚾, Beukenlaan 21, Arnhem",
       "type": "away",
       "attending": [
+        "Jordan",
         "Niels",
         "Vince"
       ]
