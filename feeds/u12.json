@@ -1,6 +1,6 @@
 {
   "team": "u12",
-  "generated": "2026-04-02T08:15:26.603156+00:00",
+  "generated": "2026-04-03T08:08:51.223441+00:00",
   "events": [
     {
       "id": "7EB5B99CB38B4E418E616E9FA032A148",
@@ -10,6 +10,7 @@
       "type": "away",
       "attending": [
         "Aiden",
+        "Lux",
         "Niels",
         "Reno",
         "Suus",
@@ -26,6 +27,7 @@
         "Aiden",
         "Jordan",
         "Niels",
+        "Owen",
         "Vince"
       ]
     },
@@ -64,6 +66,17 @@
         "Jordan",
         "Niels",
         "Vince"
+      ]
+    },
+    {
+      "id": "04C500458FA34754A24DBBEB6EDB7490",
+      "title": "Competitiewedstrijd Uitsmijters '55 - MHU12-1 - WSB - MHU12-",
+      "start": "2026-09-19T10:00:00",
+      "location": "Honk- en Softbalvereniging Uitsmijters '55, Maardijk 83C, Almelo",
+      "type": "away",
+      "attending": [
+        "Jordan",
+        "Niels"
       ]
     },
     {
