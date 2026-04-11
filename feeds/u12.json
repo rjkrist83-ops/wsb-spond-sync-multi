@@ -1,6 +1,6 @@
 {
   "team": "u12",
-  "generated": "2026-04-11T17:51:01.338625+00:00",
+  "generated": "2026-04-11T19:52:30.456115+00:00",
   "events": [
     {
       "id": "7EB5B99CB38B4E418E616E9FA032A148",
@@ -75,17 +75,6 @@
       ]
     },
     {
-      "id": "04C500458FA34754A24DBBEB6EDB7490",
-      "title": "Competitiewedstrijd Uitsmijters '55 - MHU12-1 - WSB - MHU12-",
-      "start": "2026-09-19T10:00:00",
-      "location": "Honk- en Softbalvereniging Uitsmijters '55, Maardijk 83C, Almelo",
-      "type": "away",
-      "attending": [
-        "Jordan",
-        "Niels"
-      ]
-    },
-    {
       "id": "03FF5CDC1BF24E0CA21AB3045E70FC31",
       "title": "Competitiewedstrijd Eagles - MHU12-2 - WSB - MHU12-",
       "start": "2026-09-19T10:00:00",
@@ -95,6 +84,17 @@
         "Jordan",
         "Niels",
         "Vince"
+      ]
+    },
+    {
+      "id": "04C500458FA34754A24DBBEB6EDB7490",
+      "title": "Competitiewedstrijd Uitsmijters '55 - MHU12-1 - WSB - MHU12-",
+      "start": "2026-09-19T10:00:00",
+      "location": "Honk- en Softbalvereniging Uitsmijters '55, Maardijk 83C, Almelo",
+      "type": "away",
+      "attending": [
+        "Jordan",
+        "Niels"
       ]
     },
     {
