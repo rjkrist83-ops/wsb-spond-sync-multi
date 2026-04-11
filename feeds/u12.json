@@ -1,25 +1,7 @@
 {
   "team": "u12",
-  "generated": "2026-04-11T21:05:00.350119+00:00",
+  "generated": "2026-04-11T22:02:37.844257+00:00",
   "events": [
-    {
-      "id": "7EB5B99CB38B4E418E616E9FA032A148",
-      "title": "Competitiewedstrijd Uitsmijters '55 - MHU12-1 - WSB - MHU12-",
-      "start": "2026-04-11T10:00:00",
-      "location": "Honk- en Softbalvereniging Uitsmijters '55, Maardijk 83C, Almelo",
-      "type": "away",
-      "attending": [
-        "Aiden",
-        "Guusje",
-        "Jack",
-        "Jule",
-        "Lux",
-        "Niels",
-        "Reno",
-        "Suus",
-        "Vince"
-      ]
-    },
     {
       "id": "BAF24648CE2441398E961E53C7062AF6",
       "title": "Competitiewedstrijd Tex Town Tigers - MHU12-2 - WSB - MHU12-",
