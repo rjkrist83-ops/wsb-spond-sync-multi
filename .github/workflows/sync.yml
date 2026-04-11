@@ -3,7 +3,7 @@ name: Spond Sync Multi
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 5 * * *"
+    - cron: "*/15 * * * *"
 
 permissions:
   contents: write
