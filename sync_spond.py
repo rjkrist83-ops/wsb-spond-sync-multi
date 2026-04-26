@@ -1,5 +1,4 @@
 import asyncio
-import inspect
 import json
 import os
 from datetime import datetime, timezone
@@ -141,11 +140,9 @@ def normalize_event(evt, home_keywords):
     return {
         "id": event_id,
         "title": title,
-        "raw_start": raw_start,
         "start": local_dt.strftime("%Y-%m-%dT%H:%M:%S") if local_dt else "",
         "location": location,
         "type": event_type,
-        "matched_home_keywords": matched_keywords,
     }
 
 
@@ -213,27 +210,12 @@ def extract_attendance(detail, member_map):
 
 
 async def process_team(team):
-    debug = team["slug"] == "vs"
-
-    if debug:
-        print("\n" + "=" * 70)
-        print(f"TEAM: {team['name']}")
-        print("=" * 70)
-        print("slug:", team["slug"])
-        print("group_id:", team["group_id"])
-        print("output_file:", team["output_file"])
-        print("home_address_keywords:", team["home_address_keywords"])
-
     email = team["email"]
     password = team["password"]
     group_id = team["group_id"]
 
     if not email or not password or not group_id:
-        if debug:
-            print("SKIP: incomplete config")
-            print("email set:", bool(email))
-            print("password set:", bool(password))
-            print("group_id set:", bool(group_id))
+        print(f"SKIP {team['name']}: incomplete config")
         return
 
     client = spond.Spond(username=email, password=password)
@@ -241,123 +223,25 @@ async def process_team(team):
     try:
         group = await client.get_group(group_id)
         member_map = build_member_map(group)
-
-        if debug:
-            print("DEBUG: group loaded successfully")
-            print("DEBUG: total members:", len(group.get("members", [])))
-            print("DEBUG: mapped member names:", len(member_map))
-            print("DEBUG: group keys:", sorted(list(group.keys())))
-            print(
-                "DEBUG: client methods:",
-                [
-                    m
-                    for m in dir(client)
-                    if "event" in m.lower()
-                    or "match" in m.lower()
-                    or "game" in m.lower()
-                    or "calendar" in m.lower()
-                ],
-            )
-            print("DEBUG: get_events signature:", inspect.signature(client.get_events))
-
-            wrapped = getattr(client.get_events, "__wrapped__", None)
-            print("DEBUG: has __wrapped__:", wrapped is not None)
-            if wrapped is not None:
-                try:
-                    print("DEBUG: get_events __wrapped__ source:")
-                    print(inspect.getsource(wrapped))
-                except Exception as e:
-                    print("DEBUG: could not read wrapped source:", repr(e))
-
-            try:
-                print("DEBUG: client.events object:", repr(client.events))
-            except Exception as e:
-                print("DEBUG: could not inspect client.events:", repr(e))
-
         events = await client.get_events(group_id)
-
-        if debug:
-            print("DEBUG: type(events):", type(events).__name__)
-            print("DEBUG: raw events returned from Spond:", len(events))
-            print(
-                "DEBUG: event ids returned:",
-                [str(e.get("id") or e.get("uid") or "") for e in events],
-            )
-
-            if callable(client.events):
-                try:
-                    raw_events = await client.events(groupId=group_id)
-                    print("DEBUG: direct client.events type:", type(raw_events).__name__)
-                    if isinstance(raw_events, list):
-                        print("DEBUG: direct client.events count:", len(raw_events))
-                        print(
-                            "DEBUG: direct client.events ids:",
-                            [str(e.get("id") or e.get("uid") or "") for e in raw_events],
-                        )
-                    else:
-                        print(
-                            "DEBUG: direct client.events raw:",
-                            json.dumps(raw_events, ensure_ascii=False, default=str),
-                        )
-                except Exception as e:
-                    print("DEBUG: direct client.events failed:", repr(e))
 
         output = []
 
-        for index, evt in enumerate(events, start=1):
+        for evt in events:
             norm = normalize_event(evt, team["home_address_keywords"])
-
-            if debug:
-                print("\n" + "-" * 70)
-                print(f"EVENT #{index}")
-                print("raw_event_keys:", sorted(list(evt.keys())))
-                print("raw_event_json:", json.dumps(evt, ensure_ascii=False, default=str))
-                print("id:", norm["id"])
-                print("title:", norm["title"])
-                print("raw_start:", norm["raw_start"])
-                print("normalized_start:", norm["start"])
-                print(
-                    "raw_location_field:",
-                    json.dumps(evt.get("location"), ensure_ascii=False, default=str),
-                )
-                print("raw_match_type:", (evt.get("matchInfo") or {}).get("type"))
-                print("location:", norm["location"] or "[empty]")
-                print("matched_home_keywords:", norm["matched_home_keywords"])
-                print("classified_as:", norm["type"])
 
             dt = parse_event_date(norm["start"])
             if not dt:
-                if debug:
-                    print("SKIP: no valid parsed date")
                 continue
 
-            if debug:
-                print("event_date:", dt.date())
-                print("today:", TODAY)
-
             if dt.date() < TODAY:
-                if debug:
-                    print("SKIP: event is in the past")
                 continue
 
             if norm["type"] != "away":
-                if debug:
-                    print("SKIP: event classified as home")
                 continue
-
-            if debug:
-                print("PASS: future away event -> fetching detail")
 
             detail = await client.get_event(norm["id"])
             attendees = extract_attendance(detail, member_map)
-            norm["attending"] = attendees
-
-            if debug:
-                print("DEBUG: attending count:", len(attendees))
-                if attendees:
-                    print("DEBUG: attending names:", ", ".join(attendees))
-                else:
-                    print("DEBUG: no accepted attendees found")
 
             output.append(
                 {
@@ -366,7 +250,7 @@ async def process_team(team):
                     "start": norm["start"],
                     "location": norm["location"],
                     "type": norm["type"],
-                    "attending": norm["attending"],
+                    "attending": attendees,
                 }
             )
 
@@ -374,21 +258,19 @@ async def process_team(team):
 
         os.makedirs("feeds", exist_ok=True)
 
-        payload = {
-            "team": team["slug"],
-            "generated": datetime.now(timezone.utc).isoformat(),
-            "events": output,
-        }
-
         with open(team["output_file"], "w", encoding="utf-8") as f:
-            json.dump(payload, f, indent=2, ensure_ascii=False)
+            json.dump(
+                {
+                    "team": team["slug"],
+                    "generated": datetime.now(timezone.utc).isoformat(),
+                    "events": output,
+                },
+                f,
+                indent=2,
+                ensure_ascii=False,
+            )
 
-        if debug:
-            print("\n" + "=" * 70)
-            print(f"RESULT TEAM {team['name']}")
-            print("events_in_feed:", len(output))
-            print(f"written_to: {team['output_file']}")
-            print("=" * 70)
+        print(f"OK: {team['output_file']} ({len(output)} events)")
 
     finally:
         await client.clientsession.close()
