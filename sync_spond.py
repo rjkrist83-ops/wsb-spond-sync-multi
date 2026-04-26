@@ -30,6 +30,21 @@ TEAMS = [
         "home_address_keywords": ["kaartenmakershoeve 108", "7326 xk"],
         "output_file": "feeds/u15.json",
     },
+    {
+        "slug": "vs",
+        "name": "VS",
+        "email": os.environ.get("SPOND_EMAIL_U15", "").strip(),
+        "password": os.environ.get("SPOND_PASSWORD_U15", "").strip(),
+        "group_id": os.environ.get("SPOND_GROUP_ID_VS", "").strip(),
+        "home_address_keywords": [
+            "kaartenmakershoeve 108",
+            "7326 xk",
+            "colmschaterstraatweg 3",
+            "7433 pr",
+            "schalkhaar",
+        ],
+        "output_file": "feeds/vs.json",
+    },
 ]
 
 
@@ -129,18 +144,15 @@ def normalize_event(evt, home_keywords):
     }
 
 
-# ✅ AANGEPAST: alleen voornamen
 def member_name(member):
     if not isinstance(member, dict):
         return ""
 
-    # Als er een volledige naam is → pak eerste woord
     for key in ["name", "displayName", "display_name", "fullName", "full_name"]:
         value = member.get(key)
         if isinstance(value, str) and value.strip():
             return value.strip().split(" ")[0]
 
-    # Anders gebruik firstName varianten
     first = (
         member.get("firstName")
         or member.get("first_name")
