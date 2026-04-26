@@ -38,6 +38,8 @@ jobs:
           SPOND_EMAIL_U15: ${{ secrets.SPOND_EMAIL_U15 }}
           SPOND_PASSWORD_U15: ${{ secrets.SPOND_PASSWORD_U15 }}
           SPOND_GROUP_ID_U15: ${{ secrets.SPOND_GROUP_ID_U15 }}
+
+          SPOND_GROUP_ID_VS: ${{ secrets.SPOND_GROUP_ID_VS }}
         run: |
           python sync_spond.py
 
