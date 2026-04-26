@@ -259,11 +259,20 @@ async def process_team(team):
                 ],
             )
             print("DEBUG: get_events signature:", inspect.signature(client.get_events))
+
+            wrapped = getattr(client.get_events, "__wrapped__", None)
+            print("DEBUG: has __wrapped__:", wrapped is not None)
+            if wrapped is not None:
+                try:
+                    print("DEBUG: get_events __wrapped__ source:")
+                    print(inspect.getsource(wrapped))
+                except Exception as e:
+                    print("DEBUG: could not read wrapped source:", repr(e))
+
             try:
-                print("DEBUG: get_events source:")
-                print(inspect.getsource(client.get_events))
+                print("DEBUG: client.events object:", repr(client.events))
             except Exception as e:
-                print("DEBUG: could not read get_events source:", repr(e))
+                print("DEBUG: could not inspect client.events:", repr(e))
 
         events = await client.get_events(group_id)
 
@@ -274,6 +283,24 @@ async def process_team(team):
                 "DEBUG: event ids returned:",
                 [str(e.get("id") or e.get("uid") or "") for e in events],
             )
+
+            if callable(client.events):
+                try:
+                    raw_events = await client.events(groupId=group_id)
+                    print("DEBUG: direct client.events type:", type(raw_events).__name__)
+                    if isinstance(raw_events, list):
+                        print("DEBUG: direct client.events count:", len(raw_events))
+                        print(
+                            "DEBUG: direct client.events ids:",
+                            [str(e.get("id") or e.get("uid") or "") for e in raw_events],
+                        )
+                    else:
+                        print(
+                            "DEBUG: direct client.events raw:",
+                            json.dumps(raw_events, ensure_ascii=False, default=str),
+                        )
+                except Exception as e:
+                    print("DEBUG: direct client.events failed:", repr(e))
 
         output = []
 
@@ -293,6 +320,7 @@ async def process_team(team):
                     "raw_location_field:",
                     json.dumps(evt.get("location"), ensure_ascii=False, default=str),
                 )
+                print("raw_match_type:", (evt.get("matchInfo") or {}).get("type"))
                 print("location:", norm["location"] or "[empty]")
                 print("matched_home_keywords:", norm["matched_home_keywords"])
                 print("classified_as:", norm["type"])
