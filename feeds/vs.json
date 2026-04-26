@@ -1,6 +1,6 @@
 {
   "team": "vs",
-  "generated": "2026-04-26T06:46:26.212000+00:00",
+  "generated": "2026-04-26T06:52:44.098730+00:00",
   "events": [
     {
       "id": "6704FBCB7CAC4C2E94E79C4E844C7DFF",
@@ -17,6 +17,111 @@
         "Lobke",
         "Logan",
         "Lucie"
+      ]
+    },
+    {
+      "id": "E178B5AB3BD24F00A3C561C5FD733D1D",
+      "title": "Red Caps – WSB/Eagles",
+      "start": "2026-05-11T19:30:00",
+      "location": "Bavoortseweg 7, Bavoortseweg 7, Leusden",
+      "type": "away",
+      "attending": [
+        "Bianca",
+        "Evelyn",
+        "Gamze",
+        "José",
+        "Laura",
+        "Lieke",
+        "Lobke",
+        "Logan"
+      ]
+    },
+    {
+      "id": "451DF84F77824D9797DA8C347956103A",
+      "title": "Domstad Dodgers – WSB/Eagles",
+      "start": "2026-06-14T11:00:00",
+      "location": "Admiraal Helfrichlaan 20, Admiraal Helfrichlaan 20, Utrecht",
+      "type": "away",
+      "attending": [
+        "Bianca",
+        "Evelyn",
+        "Gamze",
+        "José",
+        "Laura",
+        "Lieke",
+        "Logan"
+      ]
+    },
+    {
+      "id": "6567E9519E09434896ED2F559BAA9914",
+      "title": "Houten Dragons – WSB/Eagles",
+      "start": "2026-06-17T20:00:00",
+      "location": "Groene Hoon 1, Sportpark De Meerpaal, Groene Hoon 1, Houten",
+      "type": "away",
+      "attending": [
+        "Bianca",
+        "Evelyn",
+        "Gamze",
+        "José",
+        "Laura",
+        "Lieke",
+        "Logan"
+      ]
+    },
+    {
+      "id": "E685982A07A94299A34F141C3C831990",
+      "title": "Whombats D2 – WSB/Eagles",
+      "start": "2026-07-03T19:00:00",
+      "location": "Voordorpsedijk 73, Voordorpsedijk 73, Groenekan",
+      "type": "away",
+      "attending": [
+        "Bianca",
+        "Evelyn",
+        "Gamze",
+        "José",
+        "Lieke",
+        "Logan",
+        "Paula"
+      ]
+    },
+    {
+      "id": "260C2D265C424904A1BCDBC42C9F1744",
+      "title": "Moorfielders D1 – WSB/Eagles",
+      "start": "2026-08-19T20:00:00",
+      "location": "Kanonnenpad 4, De Hoekelumse Eng, Kanonnenpad 4, Ede",
+      "type": "away",
+      "attending": [
+        "Bianca",
+        "Gamze",
+        "Logan",
+        "May",
+        "Paula"
+      ]
+    },
+    {
+      "id": "A3A192E1BD6A4EF99426C2261D537B1E",
+      "title": "Hilversum Hurricanes – WSB/Eagles",
+      "start": "2026-09-02T19:30:00",
+      "location": "Het Jagerspaadje 32, Het Jagerspaadje 32, Loosdrecht",
+      "type": "away",
+      "attending": [
+        "Bianca",
+        "Gamze",
+        "Logan",
+        "Paula"
+      ]
+    },
+    {
+      "id": "DA14C8516A7545BC887C0A95B0989ADC",
+      "title": "Moorfielders D2 – WSB/Eagles",
+      "start": "2026-09-10T20:00:00",
+      "location": "Kanonnenpad 4, De Hoekelumse Eng, Kanonnenpad 4, Ede",
+      "type": "away",
+      "attending": [
+        "Bianca",
+        "Gamze",
+        "Logan",
+        "Paula"
       ]
     }
   ]
