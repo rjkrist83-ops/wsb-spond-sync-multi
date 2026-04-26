@@ -250,6 +250,7 @@ async def process_team(team):
 
         if debug:
             print("DEBUG: raw events returned from Spond:", len(events))
+            print("DEBUG: event ids returned:", [str(e.get('id') or e.get('uid') or '') for e in events])
 
         output = []
 
@@ -259,10 +260,13 @@ async def process_team(team):
             if debug:
                 print("\n" + "-" * 70)
                 print(f"EVENT #{index}")
+                print("raw_event_keys:", sorted(list(evt.keys())))
+                print("raw_event_json:", json.dumps(evt, ensure_ascii=False, default=str))
                 print("id:", norm["id"])
                 print("title:", norm["title"])
                 print("raw_start:", norm["raw_start"])
                 print("normalized_start:", norm["start"])
+                print("raw_location_field:", json.dumps(evt.get("location"), ensure_ascii=False, default=str))
                 print("location:", norm["location"] or "[empty]")
                 print("matched_home_keywords:", norm["matched_home_keywords"])
                 print("classified_as:", norm["type"])
