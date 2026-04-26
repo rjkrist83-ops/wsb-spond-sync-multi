@@ -1,4 +1,5 @@
 import asyncio
+import inspect
 import json
 import os
 from datetime import datetime, timezone
@@ -246,7 +247,6 @@ async def process_team(team):
             print("DEBUG: total members:", len(group.get("members", [])))
             print("DEBUG: mapped member names:", len(member_map))
             print("DEBUG: group keys:", sorted(list(group.keys())))
-            print("DEBUG: group json:", json.dumps(group, ensure_ascii=False, default=str))
             print(
                 "DEBUG: client methods:",
                 [
@@ -258,6 +258,12 @@ async def process_team(team):
                     or "calendar" in m.lower()
                 ],
             )
+            print("DEBUG: get_events signature:", inspect.signature(client.get_events))
+            try:
+                print("DEBUG: get_events source:")
+                print(inspect.getsource(client.get_events))
+            except Exception as e:
+                print("DEBUG: could not read get_events source:", repr(e))
 
         events = await client.get_events(group_id)
 
