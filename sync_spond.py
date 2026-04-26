@@ -245,12 +245,29 @@ async def process_team(team):
             print("DEBUG: group loaded successfully")
             print("DEBUG: total members:", len(group.get("members", [])))
             print("DEBUG: mapped member names:", len(member_map))
+            print("DEBUG: group keys:", sorted(list(group.keys())))
+            print("DEBUG: group json:", json.dumps(group, ensure_ascii=False, default=str))
+            print(
+                "DEBUG: client methods:",
+                [
+                    m
+                    for m in dir(client)
+                    if "event" in m.lower()
+                    or "match" in m.lower()
+                    or "game" in m.lower()
+                    or "calendar" in m.lower()
+                ],
+            )
 
         events = await client.get_events(group_id)
 
         if debug:
+            print("DEBUG: type(events):", type(events).__name__)
             print("DEBUG: raw events returned from Spond:", len(events))
-            print("DEBUG: event ids returned:", [str(e.get('id') or e.get('uid') or '') for e in events])
+            print(
+                "DEBUG: event ids returned:",
+                [str(e.get("id") or e.get("uid") or "") for e in events],
+            )
 
         output = []
 
@@ -266,7 +283,10 @@ async def process_team(team):
                 print("title:", norm["title"])
                 print("raw_start:", norm["raw_start"])
                 print("normalized_start:", norm["start"])
-                print("raw_location_field:", json.dumps(evt.get("location"), ensure_ascii=False, default=str))
+                print(
+                    "raw_location_field:",
+                    json.dumps(evt.get("location"), ensure_ascii=False, default=str),
+                )
                 print("location:", norm["location"] or "[empty]")
                 print("matched_home_keywords:", norm["matched_home_keywords"])
                 print("classified_as:", norm["type"])
