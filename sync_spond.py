@@ -133,14 +133,18 @@ def normalize_event(evt, home_keywords):
     local_dt = to_local_datetime(dt)
 
     location = normalize_location(evt.get("location"))
-    event_type = "home" if any(k in location.lower() for k in home_keywords) else "away"
+    location_lc = location.lower()
+    matched_keywords = [k for k in home_keywords if k in location_lc]
+    event_type = "home" if matched_keywords else "away"
 
     return {
         "id": event_id,
         "title": title,
+        "raw_start": raw_start,
         "start": local_dt.strftime("%Y-%m-%dT%H:%M:%S") if local_dt else "",
         "location": location,
         "type": event_type,
+        "matched_home_keywords": matched_keywords,
     }
 
 
@@ -208,14 +212,27 @@ def extract_attendance(detail, member_map):
 
 
 async def process_team(team):
-    print(f"\n=== TEAM {team['name']} ===")
+    debug = team["slug"] == "vs"
+
+    if debug:
+        print("\n" + "=" * 70)
+        print(f"TEAM: {team['name']}")
+        print("=" * 70)
+        print("slug:", team["slug"])
+        print("group_id:", team["group_id"])
+        print("output_file:", team["output_file"])
+        print("home_address_keywords:", team["home_address_keywords"])
 
     email = team["email"]
     password = team["password"]
     group_id = team["group_id"]
 
     if not email or not password or not group_id:
-        print("SKIP: incomplete config")
+        if debug:
+            print("SKIP: incomplete config")
+            print("email set:", bool(email))
+            print("password set:", bool(password))
+            print("group_id set:", bool(group_id))
         return
 
     client = spond.Spond(username=email, password=password)
@@ -224,49 +241,96 @@ async def process_team(team):
         group = await client.get_group(group_id)
         member_map = build_member_map(group)
 
-        print("DEBUG: members:", len(group.get("members", [])))
-        print("DEBUG: mapped names:", len(member_map))
+        if debug:
+            print("DEBUG: group loaded successfully")
+            print("DEBUG: total members:", len(group.get("members", [])))
+            print("DEBUG: mapped member names:", len(member_map))
 
         events = await client.get_events(group_id)
+
+        if debug:
+            print("DEBUG: raw events returned from Spond:", len(events))
+
         output = []
 
-        for evt in events:
+        for index, evt in enumerate(events, start=1):
             norm = normalize_event(evt, team["home_address_keywords"])
+
+            if debug:
+                print("\n" + "-" * 70)
+                print(f"EVENT #{index}")
+                print("id:", norm["id"])
+                print("title:", norm["title"])
+                print("raw_start:", norm["raw_start"])
+                print("normalized_start:", norm["start"])
+                print("location:", norm["location"] or "[empty]")
+                print("matched_home_keywords:", norm["matched_home_keywords"])
+                print("classified_as:", norm["type"])
 
             dt = parse_event_date(norm["start"])
             if not dt:
+                if debug:
+                    print("SKIP: no valid parsed date")
                 continue
 
+            if debug:
+                print("event_date:", dt.date())
+                print("today:", TODAY)
+
             if dt.date() < TODAY:
+                if debug:
+                    print("SKIP: event is in the past")
                 continue
 
             if norm["type"] != "away":
+                if debug:
+                    print("SKIP: event classified as home")
                 continue
 
-            detail = await client.get_event(norm["id"])
+            if debug:
+                print("PASS: future away event -> fetching detail")
 
+            detail = await client.get_event(norm["id"])
             attendees = extract_attendance(detail, member_map)
             norm["attending"] = attendees
 
-            output.append(norm)
+            if debug:
+                print("DEBUG: attending count:", len(attendees))
+                if attendees:
+                    print("DEBUG: attending names:", ", ".join(attendees))
+                else:
+                    print("DEBUG: no accepted attendees found")
+
+            output.append(
+                {
+                    "id": norm["id"],
+                    "title": norm["title"],
+                    "start": norm["start"],
+                    "location": norm["location"],
+                    "type": norm["type"],
+                    "attending": norm["attending"],
+                }
+            )
 
         output.sort(key=lambda x: x["start"])
 
         os.makedirs("feeds", exist_ok=True)
 
-        with open(team["output_file"], "w", encoding="utf-8") as f:
-            json.dump(
-                {
-                    "team": team["slug"],
-                    "generated": datetime.now(timezone.utc).isoformat(),
-                    "events": output,
-                },
-                f,
-                indent=2,
-                ensure_ascii=False,
-            )
+        payload = {
+            "team": team["slug"],
+            "generated": datetime.now(timezone.utc).isoformat(),
+            "events": output,
+        }
 
-        print(f"OK: {team['output_file']} ({len(output)} events)")
+        with open(team["output_file"], "w", encoding="utf-8") as f:
+            json.dump(payload, f, indent=2, ensure_ascii=False)
+
+        if debug:
+            print("\n" + "=" * 70)
+            print(f"RESULT TEAM {team['name']}")
+            print("events_in_feed:", len(output))
+            print(f"written_to: {team['output_file']}")
+            print("=" * 70)
 
     finally:
         await client.clientsession.close()
