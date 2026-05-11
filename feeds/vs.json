@@ -1,26 +1,7 @@
 {
   "team": "vs",
-  "generated": "2026-05-11T20:47:09.205261+00:00",
+  "generated": "2026-05-11T22:05:01.675966+00:00",
   "events": [
-    {
-      "id": "E178B5AB3BD24F00A3C561C5FD733D1D",
-      "title": "Red Caps – WSB/Eagles",
-      "start": "2026-05-11T19:30:00",
-      "location": "Bavoortseweg 7, Bavoortseweg 7, Leusden",
-      "type": "away",
-      "attending": [
-        "Bianca",
-        "Evelyn",
-        "Gamze",
-        "José",
-        "Lana",
-        "Laura",
-        "Lieke",
-        "Lobke",
-        "Logan",
-        "Lucie"
-      ]
-    },
     {
       "id": "451DF84F77824D9797DA8C347956103A",
       "title": "Domstad Dodgers – WSB/Eagles",
