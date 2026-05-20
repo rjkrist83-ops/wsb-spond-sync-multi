@@ -1,6 +1,6 @@
 {
   "team": "u12",
-  "generated": "2026-05-20T12:07:15.709974+00:00",
+  "generated": "2026-05-20T15:55:04.625688+00:00",
   "events": [
     {
       "id": "C1C278B3355C4FD7958C5086C1DB59DE",
@@ -11,6 +11,7 @@
       "attending": [
         "Aiden",
         "Jack",
+        "Julian",
         "Niels",
         "Vince"
       ]
