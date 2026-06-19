@@ -1,6 +1,6 @@
 {
   "team": "u15",
-  "generated": "2026-06-19T17:53:39.525235+00:00",
+  "generated": "2026-06-19T19:45:59.492731+00:00",
   "events": [
     {
       "id": "99CE5A75BDB44889BCD9A24F27471509",
@@ -64,6 +64,17 @@
         "Ryan",
         "Stijn",
         "Timme"
+      ]
+    },
+    {
+      "id": "BC65CDA7F4AD49E7BB70234811337004",
+      "title": "Competitiewedstrijd Tex Town Tigers - MHU15-1 vs WSB MHU15-1",
+      "start": "2026-10-10T12:00:00",
+      "location": "Tex Town Tigers, Kotkampweg 119, Enschede",
+      "type": "away",
+      "attending": [
+        "Bas",
+        "Hero"
       ]
     }
   ]
