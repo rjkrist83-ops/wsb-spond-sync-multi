@@ -1,25 +1,7 @@
 {
   "team": "u15",
-  "generated": "2026-07-04T21:56:32.685401+00:00",
+  "generated": "2026-07-04T22:57:50.477001+00:00",
   "events": [
-    {
-      "id": "4705D021F8EC4AC0858341C760BBF157",
-      "title": "Competitiewedstrijd Eagles - MHU15 vs WSB MHU15-1",
-      "start": "2026-07-04T13:00:00",
-      "location": "The Eagles, Colmschaterstraatweg 3, Schalkhaar",
-      "type": "away",
-      "attending": [
-        "Bas",
-        "Evan de",
-        "Hero",
-        "Jason",
-        "Liam",
-        "Oromé",
-        "Stijn",
-        "Timme",
-        "Yannick"
-      ]
-    },
     {
       "id": "BE653B02E3C644A099638253336251D4",
       "title": "Competitiewedstrijd Giants - MHU15-2 vs WSB MHU15-1",
