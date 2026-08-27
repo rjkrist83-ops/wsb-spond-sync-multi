@@ -1,6 +1,6 @@
 {
   "team": "u12",
-  "generated": "2026-08-27T01:04:11.772329+00:00",
+  "generated": "2026-08-27T11:11:28.486766+00:00",
   "events": [
     {
       "id": "B34EF27CB6C846C18C4873645207EAA6",
@@ -10,10 +10,13 @@
       "type": "away",
       "attending": [
         "Aiden",
+        "Guusje",
         "Jordan",
+        "Lux",
         "Niels",
         "Noah",
         "Reno",
+        "Suus",
         "Vince"
       ]
     },
