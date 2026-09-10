@@ -1,22 +1,5 @@
 {
   "team": "vs",
-  "generated": "2026-09-10T20:01:48.718216+00:00",
-  "events": [
-    {
-      "id": "DA14C8516A7545BC887C0A95B0989ADC",
-      "title": "Moorfielders D2 – WSB/Eagles",
-      "start": "2026-09-10T20:00:00",
-      "location": "Kanonnenpad 4, De Hoekelumse Eng, Kanonnenpad 4, Ede",
-      "type": "away",
-      "attending": [
-        "Evelyn",
-        "José",
-        "Lana",
-        "Laura",
-        "Lieke",
-        "Lobke",
-        "Logan"
-      ]
-    }
-  ]
+  "generated": "2026-09-10T22:34:43.873826+00:00",
+  "events": []
 }
