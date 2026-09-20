@@ -1,6 +1,6 @@
 {
   "team": "u15",
-  "generated": "2026-09-20T06:38:39.184844+00:00",
+  "generated": "2026-09-20T11:48:53.244582+00:00",
   "events": [
     {
       "id": "BC9F355193C243BF8502177DBFBA9733",
@@ -10,6 +10,7 @@
       "type": "away",
       "attending": [
         "Bas",
+        "Evan de",
         "Hero",
         "Jason",
         "Liam",
