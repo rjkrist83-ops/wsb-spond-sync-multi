@@ -1,23 +1,5 @@
 {
   "team": "u12",
-  "generated": "2026-09-26T21:09:11.666683+00:00",
-  "events": [
-    {
-      "id": "67C9DC0B86164F6B8192E62F4364B61B",
-      "title": "Competitiewedstrijd Arnhem Rhinos - MHU12-1 - WSB - MHU12-",
-      "start": "2026-09-26T10:00:00",
-      "location": "Beukenlaan 15, Beukenlaan 15, Arnhem",
-      "type": "away",
-      "attending": [
-        "Aiden",
-        "Guusje",
-        "Julian",
-        "Lux",
-        "Niels",
-        "Noah",
-        "Reno",
-        "Vince"
-      ]
-    }
-  ]
+  "generated": "2026-09-26T23:37:22.376765+00:00",
+  "events": []
 }
