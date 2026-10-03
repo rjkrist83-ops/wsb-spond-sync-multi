@@ -1,27 +1,7 @@
 {
   "team": "u15",
-  "generated": "2026-10-03T20:07:53.138143+00:00",
+  "generated": "2026-10-03T23:02:55.512433+00:00",
   "events": [
-    {
-      "id": "BC9F355193C243BF8502177DBFBA9733",
-      "title": "Competitiewedstrijd Uitsmijters '55 - MHU15-1 vs WSB MHU15-1",
-      "start": "2026-10-03T13:30:00",
-      "location": "Honk- en Softbalvereniging Uitsmijters '55, Maardijk 83C, Almelo",
-      "type": "away",
-      "attending": [
-        "Bas",
-        "Evan de",
-        "Giorgio",
-        "Hero",
-        "Jason",
-        "Liam",
-        "Oromé",
-        "Ryan",
-        "Stijn",
-        "Timme",
-        "Yannick"
-      ]
-    },
     {
       "id": "BC65CDA7F4AD49E7BB70234811337004",
       "title": "Competitiewedstrijd Tex Town Tigers - MHU15-1 vs WSB MHU15-1",
