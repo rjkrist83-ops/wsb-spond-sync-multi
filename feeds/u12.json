@@ -1,5 +1,149 @@
 {
   "team": "u12",
-  "generated": "2026-10-06T08:08:30.893631+00:00",
-  "events": []
+  "generated": "2026-10-06T15:10:31.369347+00:00",
+  "events": [
+    {
+      "id": "C1287DB0FDC14C31A991C2DBEF9BA535",
+      "title": "Binnen training pupillen",
+      "start": "2026-11-12T18:30:00",
+      "location": "Burgersveld 21, Burgersveld 21, Apeldoorn",
+      "type": "away",
+      "attending": [
+        "Niels",
+        "Suus"
+      ]
+    },
+    {
+      "id": "0E62E15E789B4F0A96224DED6649AA86",
+      "title": "Binnen training pupillen",
+      "start": "2026-11-19T18:30:00",
+      "location": "Burgersveld 21, Burgersveld 21, Apeldoorn",
+      "type": "away",
+      "attending": [
+        "Niels",
+        "Suus"
+      ]
+    },
+    {
+      "id": "00AE31E070934376942C6CC14C987BAC",
+      "title": "Binnen training pupillen",
+      "start": "2026-11-26T18:30:00",
+      "location": "Burgersveld 21, Burgersveld 21, Apeldoorn",
+      "type": "away",
+      "attending": [
+        "Niels",
+        "Suus"
+      ]
+    },
+    {
+      "id": "E37BE33A617146A3858DC5DB73D0FE33",
+      "title": "Binnen training pupillen",
+      "start": "2026-12-10T18:30:00",
+      "location": "Burgersveld 21, Burgersveld 21, Apeldoorn",
+      "type": "away",
+      "attending": [
+        "Niels",
+        "Suus"
+      ]
+    },
+    {
+      "id": "03BACA236CA84909AD55A2B3E8AD2438",
+      "title": "Binnen training pupillen",
+      "start": "2026-12-17T18:30:00",
+      "location": "Burgersveld 21, Burgersveld 21, Apeldoorn",
+      "type": "away",
+      "attending": [
+        "Niels",
+        "Suus"
+      ]
+    },
+    {
+      "id": "4EB7DEB1C96146EDB529A50D0A6BA557",
+      "title": "Binnen training pupillen",
+      "start": "2027-01-14T18:30:00",
+      "location": "Burgersveld 21, Burgersveld 21, Apeldoorn",
+      "type": "away",
+      "attending": [
+        "Niels",
+        "Suus"
+      ]
+    },
+    {
+      "id": "94500548881D451F843AD3DFD6B48E43",
+      "title": "Binnen training pupillen",
+      "start": "2027-01-21T18:30:00",
+      "location": "Burgersveld 21, Burgersveld 21, Apeldoorn",
+      "type": "away",
+      "attending": [
+        "Niels",
+        "Suus"
+      ]
+    },
+    {
+      "id": "8258A57571B549B49C4A4DFF43AB05F8",
+      "title": "Binnen training pupillen",
+      "start": "2027-01-28T18:30:00",
+      "location": "Burgersveld 21, Burgersveld 21, Apeldoorn",
+      "type": "away",
+      "attending": [
+        "Niels",
+        "Suus"
+      ]
+    },
+    {
+      "id": "551FE2E8FDF243FC876050B9D2205A06",
+      "title": "Binnen training pupillen",
+      "start": "2027-02-04T18:30:00",
+      "location": "Burgersveld 21, Burgersveld 21, Apeldoorn",
+      "type": "away",
+      "attending": [
+        "Niels",
+        "Suus"
+      ]
+    },
+    {
+      "id": "8D02AE6D519D416B9DC22C9B2CCF0016",
+      "title": "Binnen training pupillen",
+      "start": "2027-02-11T18:30:00",
+      "location": "Burgersveld 21, Burgersveld 21, Apeldoorn",
+      "type": "away",
+      "attending": [
+        "Niels",
+        "Suus"
+      ]
+    },
+    {
+      "id": "8AA5D57E375A48E3BEFB21FD129E7D41",
+      "title": "Binnen training pupillen",
+      "start": "2027-02-18T18:30:00",
+      "location": "Burgersveld 21, Burgersveld 21, Apeldoorn",
+      "type": "away",
+      "attending": [
+        "Niels",
+        "Suus"
+      ]
+    },
+    {
+      "id": "CD63FE8D53C24B5DAC50F1F9339CA171",
+      "title": "Binnen training pupillen",
+      "start": "2027-03-04T18:30:00",
+      "location": "Burgersveld 21, Burgersveld 21, Apeldoorn",
+      "type": "away",
+      "attending": [
+        "Niels",
+        "Suus"
+      ]
+    },
+    {
+      "id": "80B4A54E45BF4B15BA6A3AA39A8B0DD3",
+      "title": "Binnen training pupillen",
+      "start": "2027-03-11T18:30:00",
+      "location": "Burgersveld 21, Burgersveld 21, Apeldoorn",
+      "type": "away",
+      "attending": [
+        "Niels",
+        "Suus"
+      ]
+    }
+  ]
 }
