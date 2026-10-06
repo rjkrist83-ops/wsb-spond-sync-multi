@@ -1,6 +1,6 @@
 {
   "team": "u15",
-  "generated": "2026-10-06T15:10:34.076152+00:00",
+  "generated": "2026-10-06T20:19:04.983920+00:00",
   "events": [
     {
       "id": "BC65CDA7F4AD49E7BB70234811337004",
@@ -16,6 +16,7 @@
         "Jason",
         "Liam",
         "Oromé",
+        "Ryan",
         "Stijn",
         "Timme"
       ]
@@ -24,12 +25,14 @@
       "id": "18431F58F8C24BF6B92A273C42805AB7",
       "title": "Zaaltraining Aspiranten",
       "start": "2026-11-16T18:30:00",
-      "location": "",
+      "location": "Burgersveld 21, Burgersveld 21, Apeldoorn",
       "type": "away",
       "attending": [
         "Bas",
         "Evan de",
+        "Hero",
         "Ryan",
+        "Stijn",
         "Timme"
       ]
     },
@@ -37,12 +40,14 @@
       "id": "A143B8A48B9A450A9E17329A67D34CF3",
       "title": "Zaaltraining Aspiranten",
       "start": "2026-11-23T18:30:00",
-      "location": "",
+      "location": "Burgersveld 21, Burgersveld 21, Apeldoorn",
       "type": "away",
       "attending": [
         "Bas",
         "Evan de",
+        "Hero",
         "Ryan",
+        "Stijn",
         "Timme"
       ]
     },
@@ -50,12 +55,14 @@
       "id": "B70F2674637D43E6A55E7EAB05B1821C",
       "title": "Zaaltraining Aspiranten",
       "start": "2026-11-30T18:30:00",
-      "location": "",
+      "location": "Burgersveld 21 Apeldoorn",
       "type": "away",
       "attending": [
         "Bas",
         "Evan de",
+        "Hero",
         "Ryan",
+        "Stijn",
         "Timme"
       ]
     },
@@ -63,23 +70,24 @@
       "id": "FFC15D20C9614D31B6898202A3434B98",
       "title": "Zaaltraining Aspiranten",
       "start": "2026-12-07T18:30:00",
-      "location": "",
+      "location": "Burgersveld 21 Apeldoorn",
       "type": "away",
       "attending": [
         "Bas",
+        "Hero",
         "Ryan",
+        "Stijn",
         "Timme"
       ]
     },
     {
       "id": "3F4C1D0D42FD489182CBDED15911FC4F",
       "title": "Zaaltraining Aspiranten",
-      "start": "2026-12-14T18:30:00",
-      "location": "",
+      "start": "2026-12-16T18:00:00",
+      "location": "Heemradenlaan 130, Heemradenlaan 130, Apeldoorn",
       "type": "away",
       "attending": [
         "Bas",
-        "Ryan",
         "Timme"
       ]
     },
@@ -87,23 +95,24 @@
       "id": "124818434B2D4D30B31CF651335EFA66",
       "title": "Zaaltraining Aspiranten",
       "start": "2027-01-11T18:30:00",
-      "location": "",
+      "location": "Burgersveld 21 Apeldoorn",
       "type": "away",
       "attending": [
         "Bas",
+        "Hero",
         "Ryan",
+        "Stijn",
         "Timme"
       ]
     },
     {
       "id": "84F16314EA614073A2B3DCE84A45F544",
       "title": "Zaaltraining Aspiranten",
-      "start": "2027-01-18T18:30:00",
-      "location": "",
+      "start": "2027-01-20T18:00:00",
+      "location": "1e Wormenseweg 213, 1e Wormenseweg 213, Apeldoorn",
       "type": "away",
       "attending": [
         "Bas",
-        "Ryan",
         "Timme"
       ]
     },
@@ -111,11 +120,13 @@
       "id": "07A233F6BF7E4BE192C469AC1ED9C7D3",
       "title": "Zaaltraining Aspiranten",
       "start": "2027-01-25T18:30:00",
-      "location": "",
+      "location": "Burgersveld 21 Apeldoorn",
       "type": "away",
       "attending": [
         "Bas",
+        "Hero",
         "Ryan",
+        "Stijn",
         "Timme"
       ]
     },
@@ -123,11 +134,13 @@
       "id": "2EA83EE93E60445E955182DC21867489",
       "title": "Zaaltraining Aspiranten",
       "start": "2027-02-01T18:30:00",
-      "location": "",
+      "location": "Burgersveld 21, Burgersveld 21, Apeldoorn",
       "type": "away",
       "attending": [
         "Bas",
+        "Hero",
         "Ryan",
+        "Stijn",
         "Timme"
       ]
     },
@@ -135,23 +148,23 @@
       "id": "B79BEE0FAEBB44FA9D7F048DC79C8DA7",
       "title": "Zaaltraining Aspiranten",
       "start": "2027-02-08T18:30:00",
-      "location": "",
+      "location": "Burgersveld 21, Burgersveld 21, Apeldoorn",
       "type": "away",
       "attending": [
         "Bas",
+        "Hero",
         "Ryan",
+        "Stijn",
         "Timme"
       ]
     },
     {
       "id": "DEA73CB0EE24434C896B6EA831544D81",
       "title": "Zaaltraining Aspiranten",
-      "start": "2027-02-15T18:30:00",
-      "location": "",
+      "start": "2027-02-17T18:30:00",
+      "location": "Zilverschoon 112, Zilverschoon 112, Apeldoorn",
       "type": "away",
       "attending": [
-        "Bas",
-        "Ryan",
         "Timme"
       ]
     },
@@ -159,11 +172,13 @@
       "id": "BD8D935BDF35445F861316B210282493",
       "title": "Zaaltraining Aspiranten",
       "start": "2027-03-01T18:30:00",
-      "location": "",
+      "location": "Burgersveld 21 Apeldoorn",
       "type": "away",
       "attending": [
         "Bas",
+        "Hero",
         "Ryan",
+        "Stijn",
         "Timme"
       ]
     },
@@ -171,11 +186,13 @@
       "id": "3551851889CE4152B9E78C57FA8058BB",
       "title": "Zaaltraining Aspiranten",
       "start": "2027-03-08T18:30:00",
-      "location": "",
+      "location": "Burgersveld 21, Burgersveld 21, Apeldoorn",
       "type": "away",
       "attending": [
         "Bas",
+        "Hero",
         "Ryan",
+        "Stijn",
         "Timme"
       ]
     }
