@@ -1,6 +1,6 @@
 {
   "team": "u15",
-  "generated": "2026-10-15T10:18:05.626687+00:00",
+  "generated": "2026-10-15T15:11:24.375884+00:00",
   "events": [
     {
       "id": "18431F58F8C24BF6B92A273C42805AB7",
@@ -77,6 +77,7 @@
       "type": "away",
       "attending": [
         "Bas",
+        "Hero",
         "Jason",
         "Liam",
         "Ryan",
@@ -107,6 +108,7 @@
       "type": "away",
       "attending": [
         "Bas",
+        "Hero",
         "Jason",
         "Liam",
         "Ryan",
@@ -169,6 +171,7 @@
       "type": "away",
       "attending": [
         "Bas",
+        "Hero",
         "Jason",
         "Liam",
         "Ryan",
