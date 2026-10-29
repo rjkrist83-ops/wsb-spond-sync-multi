@@ -1,6 +1,6 @@
 {
   "team": "u12",
-  "generated": "2026-10-29T13:00:03.935766+00:00",
+  "generated": "2026-10-29T18:54:49.716127+00:00",
   "events": [
     {
       "id": "C1287DB0FDC14C31A991C2DBEF9BA535",
@@ -9,6 +9,7 @@
       "location": "Burgersveld 21, Burgersveld 21, Apeldoorn",
       "type": "away",
       "attending": [
+        "Aiden",
         "Lux",
         "Mees",
         "Niels",
