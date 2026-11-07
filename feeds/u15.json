@@ -1,6 +1,6 @@
 {
   "team": "u15",
-  "generated": "2026-11-07T04:45:25.676025+00:00",
+  "generated": "2026-11-07T11:28:50.657250+00:00",
   "events": [
     {
       "id": "18431F58F8C24BF6B92A273C42805AB7",
@@ -9,6 +9,7 @@
       "location": "Burgersveld 21, Burgersveld 21, Apeldoorn",
       "type": "away",
       "attending": [
+        "August",
         "Bas",
         "Evan de",
         "Hero",
