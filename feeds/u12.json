@@ -1,6 +1,6 @@
 {
   "team": "u12",
-  "generated": "2026-11-17T12:44:53.586036+00:00",
+  "generated": "2026-11-17T21:22:38.512334+00:00",
   "events": [
     {
       "id": "0E62E15E789B4F0A96224DED6649AA86",
@@ -58,6 +58,16 @@
       ]
     },
     {
+      "id": "FB13BB82C21C482EBDD311E0308A30DE",
+      "title": "PC training Pupillen",
+      "start": "2027-01-13T19:00:00",
+      "location": "Gentiaanstraat 804, Gentiaanstraat 804, Apeldoorn",
+      "type": "away",
+      "attending": [
+        "Niels"
+      ]
+    },
+    {
       "id": "4EB7DEB1C96146EDB529A50D0A6BA557",
       "title": "Binnen training pupillen",
       "start": "2027-01-14T18:30:00",
@@ -84,6 +94,16 @@
       ]
     },
     {
+      "id": "DE799877902E4DDA90E26414EA6A0126",
+      "title": "PC training Pupillen",
+      "start": "2027-01-27T19:00:00",
+      "location": "Gentiaanstraat 804, Gentiaanstraat 804, Apeldoorn",
+      "type": "away",
+      "attending": [
+        "Niels"
+      ]
+    },
+    {
       "id": "8258A57571B549B49C4A4DFF43AB05F8",
       "title": "Binnen training pupillen",
       "start": "2027-01-28T18:30:00",
@@ -97,6 +117,16 @@
       ]
     },
     {
+      "id": "6B4C2FD8AECD42B2B69A734532DE1E6D",
+      "title": "PC training Pupillen",
+      "start": "2027-02-03T19:00:00",
+      "location": "Gentiaanstraat 804, Gentiaanstraat 804, Apeldoorn",
+      "type": "away",
+      "attending": [
+        "Niels"
+      ]
+    },
+    {
       "id": "551FE2E8FDF243FC876050B9D2205A06",
       "title": "Binnen training pupillen",
       "start": "2027-02-04T18:30:00",
@@ -107,6 +137,16 @@
         "Niels",
         "Suus",
         "Vince"
+      ]
+    },
+    {
+      "id": "178E03DF49E24BDB8A03D2C18EDFA2C3",
+      "title": "PC training Pupillen",
+      "start": "2027-02-10T19:00:00",
+      "location": "Gentiaanstraat 804, Gentiaanstraat 804, Apeldoorn",
+      "type": "away",
+      "attending": [
+        "Niels"
       ]
     },
     {
@@ -133,6 +173,16 @@
         "Niels",
         "Suus",
         "Vince"
+      ]
+    },
+    {
+      "id": "C39068C964004D0AAE34C4F8D444680C",
+      "title": "PC training Pupillen",
+      "start": "2027-03-03T19:00:00",
+      "location": "Gentiaanstraat 804, Gentiaanstraat 804, Apeldoorn",
+      "type": "away",
+      "attending": [
+        "Niels"
       ]
     },
     {
