@@ -1,24 +1,7 @@
 {
   "team": "u12",
-  "generated": "2026-11-19T18:28:14.228891+00:00",
+  "generated": "2026-11-20T00:49:06.956841+00:00",
   "events": [
-    {
-      "id": "0E62E15E789B4F0A96224DED6649AA86",
-      "title": "Binnen training pupillen",
-      "start": "2026-11-19T18:30:00",
-      "location": "Burgersveld 21, Burgersveld 21, Apeldoorn",
-      "type": "away",
-      "attending": [
-        "Aiden",
-        "Jordan",
-        "Lux",
-        "Mees",
-        "Noah",
-        "Owen",
-        "Suus",
-        "Vince"
-      ]
-    },
     {
       "id": "00AE31E070934376942C6CC14C987BAC",
       "title": "Binnen training pupillen",
@@ -65,7 +48,8 @@
       "location": "Gentiaanstraat 804, Gentiaanstraat 804, Apeldoorn",
       "type": "away",
       "attending": [
-        "Niels"
+        "Niels",
+        "Vince"
       ]
     },
     {
