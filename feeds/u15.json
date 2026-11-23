@@ -1,6 +1,6 @@
 {
   "team": "u15",
-  "generated": "2026-11-23T09:01:01.468223+00:00",
+  "generated": "2026-11-23T21:20:31.950579+00:00",
   "events": [
     {
       "id": "A143B8A48B9A450A9E17329A67D34CF3",
@@ -11,7 +11,6 @@
       "attending": [
         "Bas",
         "Evan de",
-        "Giorgio",
         "Hero",
         "Jason",
         "Liam",
@@ -95,6 +94,7 @@
       "type": "away",
       "attending": [
         "Bas",
+        "Jason",
         "Timme"
       ]
     },
@@ -139,6 +139,7 @@
       "attending": [
         "Bas",
         "Evan de",
+        "Jason",
         "Timme"
       ]
     },
@@ -166,6 +167,7 @@
       "type": "away",
       "attending": [
         "Bas",
+        "Jason",
         "Timme"
       ]
     },
@@ -193,6 +195,7 @@
       "type": "away",
       "attending": [
         "Bas",
+        "Jason",
         "Timme"
       ]
     },
@@ -235,6 +238,7 @@
       "type": "away",
       "attending": [
         "Bas",
+        "Jason",
         "Timme"
       ]
     },
