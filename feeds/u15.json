@@ -1,25 +1,7 @@
 {
   "team": "u15",
-  "generated": "2026-11-23T21:20:31.950579+00:00",
+  "generated": "2026-11-24T05:24:49.021553+00:00",
   "events": [
-    {
-      "id": "A143B8A48B9A450A9E17329A67D34CF3",
-      "title": "Zaaltraining Aspiranten",
-      "start": "2026-11-23T18:30:00",
-      "location": "Burgersveld 21, Burgersveld 21, Apeldoorn",
-      "type": "away",
-      "attending": [
-        "Bas",
-        "Evan de",
-        "Hero",
-        "Jason",
-        "Liam",
-        "Ryan",
-        "Stijn",
-        "Timme",
-        "Yannick"
-      ]
-    },
     {
       "id": "B70F2674637D43E6A55E7EAB05B1821C",
       "title": "Zaaltraining Aspiranten",
