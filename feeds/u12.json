@@ -1,6 +1,6 @@
 {
   "team": "u12",
-  "generated": "2026-11-26T11:16:26.883583+00:00",
+  "generated": "2026-11-26T20:22:10.645906+00:00",
   "events": [
     {
       "id": "00AE31E070934376942C6CC14C987BAC",
@@ -9,7 +9,6 @@
       "location": "Burgersveld 21, Burgersveld 21, Apeldoorn",
       "type": "away",
       "attending": [
-        "Jordan",
         "Lux",
         "Mees",
         "Noah",
@@ -51,6 +50,7 @@
       "type": "away",
       "attending": [
         "Niels",
+        "Suus",
         "Vince"
       ]
     },
@@ -87,7 +87,8 @@
       "location": "Gentiaanstraat 804, Gentiaanstraat 804, Apeldoorn",
       "type": "away",
       "attending": [
-        "Niels"
+        "Niels",
+        "Suus"
       ]
     },
     {
@@ -110,7 +111,8 @@
       "location": "Gentiaanstraat 804, Gentiaanstraat 804, Apeldoorn",
       "type": "away",
       "attending": [
-        "Niels"
+        "Niels",
+        "Suus"
       ]
     },
     {
@@ -133,7 +135,8 @@
       "location": "Gentiaanstraat 804, Gentiaanstraat 804, Apeldoorn",
       "type": "away",
       "attending": [
-        "Niels"
+        "Niels",
+        "Suus"
       ]
     },
     {
@@ -169,7 +172,8 @@
       "location": "Gentiaanstraat 804, Gentiaanstraat 804, Apeldoorn",
       "type": "away",
       "attending": [
-        "Niels"
+        "Niels",
+        "Suus"
       ]
     },
     {
